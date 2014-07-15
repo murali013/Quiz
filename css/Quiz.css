@@ -1,0 +1,148 @@
+ul li
+{	
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #4D4D4D;
+	font-family: sans-serif;
+	font-size: 19px;
+	font-weight: bold;
+	text-align: right;
+}
+
+ul
+{
+	float : left;
+}
+
+.levels li
+{
+	font-weight: normal !important;
+	text-align: left !important;
+}
+
+.tutorial
+{
+	color: #4D4D4D;
+	font-size: 23px;
+	font-family: sans-serif;
+	font-weight: bold;	
+	margin-top : 26px;
+}
+
+.outline
+{
+	margin-left: 38px;
+	border-bottom: solid #CCCCCC;
+	border-bottom-width: 1px;
+	padding-bottom: 12px;
+}
+
+.dashboard
+{
+	width : 50%;
+	margin-top : 35px;
+}
+
+.drag_drop
+{
+	width : 50%;
+	width: 50%;
+	position: absolute;
+	top: 648px;
+}
+
+.fillblank
+{
+	width: 50%;
+	position: absolute;
+	top: 434px;
+}
+
+.fillcontainer
+{
+	padding-left: 42px;
+	padding-top: 19px;
+	font-size: 17px;
+}
+
+.dragging
+{
+	margin-left: 38px;
+	margin-top: 31px;
+	font-size: 17px;
+}
+
+.container
+{
+	border-style: dashed;
+	border-color: #4D4D4D;
+	border-width: 1px;
+	border-radius: 12px;
+	width: 48px;
+	height: 30px;
+	padding: 10px 58px;
+	line-height: 50px;
+}
+
+.button li div
+{
+	background: #4D4D4D;
+	color: #FFFFFF;
+	width: 140px;
+	height: 32px;
+	padding-top: 14px;
+	font-size: 12px;
+	text-align: center;
+}
+
+.button
+{
+	position: absolute;
+	top: 75px;
+	left: 642px;
+}
+
+.title1
+{
+	padding-left : 57px;
+}
+
+
+.title2
+{
+	padding-left : 72px;
+}
+
+.title3
+{
+	padding-left : 46px;
+}
+
+.title4
+{
+	padding-left : 28px;
+}
+
+.title5
+{
+	padding-left : 32px;
+}
+
+.header img
+{
+	width : 180px;
+	height : 88px;
+}
+
+.title
+{
+	font-size : 16px;
+	color : #FFFFFF;
+}
+
+.header
+{
+	background : #4D4D4D;
+	padding-bottom : 5px;
+}
