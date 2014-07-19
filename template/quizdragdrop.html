@@ -1,0 +1,59 @@
+<div class = "drag_drop">
+	<div class = "tutorial outline"><span ng-bind = "quiz" ></span></div>	
+	<div style = "margin: 40px;">
+		Type
+		<div class="container" data-drop="true"  multiple = "true" data-jqyoui-options="" jqyoui-droppable="" ng-model="drop0">
+			<div class="container1 dropped" ng-class = "{red : !dropans1, green : dropright1}" multiple = "true" data-drag="false" data-jqyoui-options="" ng-model="drop0" ng-bind="drop0" jqyoui-draggable="" ng-hide="!drop0" class = "dropped">
+			</div>
+		</div>
+		instructions,
+		<div class="container" data-drop="true" data-jqyoui-options="" jqyoui-droppable="" ng-model="drop1" >
+			<div class="container1 dropped" ng-class = "{red : !dropans2, green : dropright2}" data-drag="false" data-jqyoui-options="" ng-model="drop1" ng-bind="drop1" jqyoui-draggable="" ng-hide="!drop1">
+			</div>
+		</div> 
+		and
+		<div class="container" data-drop="true" data-jqyoui-options="" jqyoui-droppable="" ng-model="drop2">
+			<div class="container1 dropped"  ng-class = "{red : !dropans3, green : dropright3}" data-drag="false" data-jqyoui-options="" ng-model="drop2" ng-bind="drop2" jqyoui-draggable="" ng-hide="!drop2">
+			</div>
+		</div>
+		in the textbox on the left. Then, 
+		<div class="container"  data-drop="true" data-jqyoui-options="" jqyoui-droppable="" ng-model="drop3">
+			<div class="container1 dropped"  ng-class = "{red : !dropans4, green : dropright4}" data-drag="false" data-jqyoui-options="" ng-model="drop3" ng-bind="drop3" jqyoui-draggable="" ng-hide="!drop3">
+			</div>
+		</div> 
+		that
+		<div class="container" data-drop="true" data-jqyoui-options="" jqyoui-droppable="" ng-model="drop4">
+			<div class="container1 dropped" ng-class = "{red : !dropans5, green : dropright5}" data-drag="false" data-jqyoui-options="" ng-model="drop4" ng-bind="drop4" jqyoui-draggable="" ng-hide="!drop4" >
+			</div>
+		</div>
+		answers and click 
+		<div class="container" data-drop="true" data-jqyoui-options="" jqyoui-droppable="" ng-model="drop5">
+			<div class="container1 dropped" ng-class = "{red : !dropans6, green : dropright6}" data-drag="false" data-jqyoui-options="" ng-model="drop5" ng-bind="drop5" jqyoui-draggable="" ng-hide="!drop5">
+			</div>
+		</div> 
+		as Answer.
+		<div class="container" data-drop="true" data-jqyoui-options="" jqyoui-droppable="" ng-model="drop6">
+			<div class="container1 dropped" ng-class = "{red : !dropans7, green : dropright7}" data-drag="false" data-jqyoui-options="" ng-model="drop6" ng-bind="drop6" jqyoui-draggable="" ng-hide="!drop6">
+			</div>
+		</div>
+		<div class="container" data-drop="true" data-jqyoui-options="" jqyoui-droppable="" ng-model="drop7">
+			<div class="container1 dropped" ng-class = "{red : !dropans8, green : dropright8}" data-drag="false" data-jqyoui-options="" ng-model="drop7" ng-bind="drop7" jqyoui-draggable="" ng-hide="!drop7">
+			</div>
+		</div>
+	</div>
+				
+	<ul class = "button">
+			<li><div data-drag=src1  ng-class = "{greyedout : !src1}" data-jqyoui-options="{revert: 'invalid'}"  ng-model= "src1" jqyoui-draggable="{index: 0, animate:'true'}" >{{text1}}</div></li>
+			<li><div data-drag=src2  ng-class = "{greyedout : !src2}" data-jqyoui-options="{revert: 'invalid'}"  ng-model= "src2" jqyoui-draggable="{index: 1, animate:'true'}" >{{text2}}</div></li>
+			<li><div data-drag=src3  ng-class = "{greyedout : !src3}" data-jqyoui-options="{revert: 'invalid'}"  ng-model= "src3" jqyoui-draggable="{index: 2, animate:'true'}" >{{text3}}</div></li>
+			<li><div data-drag=src4  ng-class = "{greyedout : !src4}" data-jqyoui-options="{revert: 'invalid'}"  ng-model= "src4" jqyoui-draggable="{index: 3, animate:'true'}" >{{text4}}</div></li>
+			<li><div data-drag=src5  ng-class = "{greyedout : !src5}" data-jqyoui-options="{revert: 'invalid'}"  ng-model= "src5" jqyoui-draggable="{index: 4, animate:'true'}" >{{text5}}</div></li>
+			<li><div data-drag=src6  ng-class = "{greyedout : !src6}" data-jqyoui-options="{revert: 'invalid'}"  ng-model= "src6" jqyoui-draggable="{index: 5, animate:'true'}" >{{text6}}</div></li>
+			<li><div data-drag=src7  ng-class = "{greyedout : !src7}" data-jqyoui-options="{revert: 'invalid'}"  ng-model= "src7" jqyoui-draggable="{index: 6, animate:'true'}" >{{text7}}</div></li>
+			<li><div data-drag=src8  ng-class = "{greyedout : !src8}" data-jqyoui-options="{revert: 'invalid'}"  ng-model= "src8" jqyoui-draggable="{index: 7, animate:'true'}" >{{text8}}</div></li>
+	</ul>
+	<div class = 'dragcontainer'>
+			<input type = 'button' ng-disabled = 'isdragDisable' value = 'Clear Answers' ng-click = 'clearDragAnswers()'/>
+			<input type = 'button' value = 'Show Answers' ng-disabled = 'isdragDisable' ng-click = 'showDragAnswers()'/>
+	</div>
+</div>

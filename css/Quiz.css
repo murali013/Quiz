@@ -10,6 +10,32 @@ ul li
 	text-align: right;
 }
 
+.levels
+{
+	position: absolute;
+	left: 200px;    
+    top: 200px;
+}
+
+.dropped
+{
+	background: #4D4D4D;
+	text-align: center;
+	line-height: 36px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+
+.dragcontainer
+{
+	margin-left: 42px;
+}
+.greyedout
+{
+	background: #dddddd !important;
+}
+
 ul
 {
 	float : left;
@@ -38,6 +64,11 @@ ul
 	padding-bottom: 12px;
 }
 
+.highlight
+{
+	background : #00ff00;
+}
+
 .dashboard
 {
 	width : 50%;
@@ -46,17 +77,28 @@ ul
 
 .drag_drop
 {
-	width : 50%;
-	width: 50%;
-	position: absolute;
-	top: 648px;
+	width : 65%;	
+	margin-top : 35px;
 }
+
+.complete
+{
+	width : 65%;	
+	margin-top : 35px;
+}
+
+
+.time
+{
+	width : 65%;	
+	margin-top : 35px;
+}
+
 
 .fillblank
 {
 	width: 50%;
-	position: absolute;
-	top: 434px;
+	margin-top : 35px;
 }
 
 .fillcontainer
@@ -79,28 +121,41 @@ ul
 	border-color: #4D4D4D;
 	border-width: 1px;
 	border-radius: 12px;
-	width: 48px;
-	height: 30px;
-	padding: 10px 58px;
-	line-height: 50px;
+	width: 170px;
+	height: 38px;
+	display: inline-block;
+	margin: 0px 10px 7px 18px;
+	vertical-align: middle;
+}
+
+.container1
+{
+	border-style: dashed;
+	border-color: #4D4D4D;
+	border-width: 1px;
+	border-radius: 12px;
+	width: inherit;
+	height: inherit;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 .button li div
 {
 	background: #4D4D4D;
 	color: #FFFFFF;
-	width: 140px;
-	height: 32px;
-	padding-top: 14px;
+	width: 137px;
+	height: 38px;
 	font-size: 12px;
+	line-height: 37px;
 	text-align: center;
 }
 
 .button
 {
 	position: absolute;
-	top: 75px;
-	left: 642px;
+	left: 710px;    
+    top: 200px;
 }
 
 .title1
@@ -111,28 +166,34 @@ ul
 
 .title2
 {
-	padding-left : 72px;
+	padding-left : 45px;
 }
 
 .title3
 {
-	padding-left : 46px;
+	padding-left : 8px;
 }
 
 .title4
 {
-	padding-left : 28px;
+	padding-left : 8px;
 }
 
 .title5
 {
-	padding-left : 32px;
+	padding-left : 5px;
 }
 
 .header img
 {
 	width : 180px;
 	height : 88px;
+
+}
+
+.header a
+{
+	margin-left : 10px;
 }
 
 .title
@@ -145,4 +206,20 @@ ul
 {
 	background : #4D4D4D;
 	padding-bottom : 5px;
+}
+
+.red 
+{
+	background : #FF0000 !important;
+}
+
+.green
+{
+	background : #00FF00 !important;	
+}
+
+.fillContainer
+{
+	float : right;
+	margin-top : 10px;
 }

@@ -13,11 +13,11 @@
 <body>
 	<div ng-controller = "mainController" >  
 	<div class = "header">
-		<img src = "image/Introduction.png"></img>
-		<img src = "image/Dragdrop.png"></img>
-		<img src = "image/Fillblank.png"></img>
-		<img src = "image/Timestamp.png"></img>
-		<img src = "image/Complete.png"></img>
+		<a href="#INTRODUCTION"><img ng-class = "{highlight: isintro}" src = "image/Introduction.png"></img></a>
+		<a href="#DRAGDROP"><img ng-class = "{highlight: isdrag}" src = "image/Dragdrop.png"></img></a>
+		<a href="#FILLBLANK"><img ng-class = "{highlight: isfillblank}" src = "image/Fillblank.png"></img></a>
+		<a href="#TIME"><img ng-class = "{highlight: istime}" src = "image/Timestamp.png"></img></a>
+		<a href="#COMPLETE"><img ng-class = "{highlight: isend}" src = "image/Complete.png"></img></a>
 		<div class = "title">
 			<span class = "title1" ng-bind = "heading1"></span>
 			<span class = "title2" ng-bind = "heading2"></span>
@@ -26,38 +26,9 @@
 			<span class = "title5" ng-bind = "heading5"></span>
 		</div>
 	</div>
-	
-	<div class = "dashboard">
-			<div class = "tutorial outline"><span ng-bind = "title" ></span></div>
-			<ul>
-				<li>English Level</li>
-				<li>Time</li>
-				<li>Skill</li>
-				<li>Subject</li>
-				<li><img src = "image/up.jpg" width = "28" height = "28"></li>
-			</ul>
-			<ul class = "levels">
-				<li><span ng-bind = "level"></span></li>
-				<li><span ng-bind = "time"></span></li>
-				<li><span ng-bind = "skill"></span></li>
-				<li><span ng-bind = "subject"></span></li>			
-				<li><span ng-bind = "description"></span></li>
-			</ul>
-	</div>
-	
-	<div class = "fillblank">
-		<div class = "tutorial outline">
-			<span ng-bind = "heading3"></span>
-		</div>
-		<div  get-fill-question fillquestion = fillQuery class = "fillcontainer"></div>
-	</div>
-	<div class = "drag_drop">
-		<div class = "tutorial outline"><span ng-bind = "quiz" ></span></div>
-			<div get-question></div>
-			<ul class = "button">
-				<li ng-repeat = "options in source"><div data-drag="true"  data-jqyoui-options="{revert: 'invalid'}"  ng-model= "options.model" jqyoui-draggable="{animate:true}" >{{options.model}}</div></li>
-			</ul>			
-		</div>
+	<!-- content area-->
+	<div ng-view></div>
 	</div>	
 </body>
 </html>
+
