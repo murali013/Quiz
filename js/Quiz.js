@@ -302,7 +302,7 @@ Quiz.directive("getFillQuestion", function($compile){
 				  fillanswers  : "="},
 		transclude : true,
 		link :function(scope, element, attrs){
-			element.html(scope.fillquestion);
+			element.html("<p>"+scope.fillquestion+"</p>");
 			var text = angular.element("<input type = 'text' ng-model= 'ngModel' ng-class ng-change = setUiState()>");
 			var e = $compile(text)(scope);
 			element.find("CIT_answer").replaceWith(e);	
